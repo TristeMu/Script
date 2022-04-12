@@ -6,22 +6,22 @@
 //如果需要在服务器上用nodejs运行则需要用boxjs(数据查看器,关键字:dyjs_new)把缓存所有数据导出放到相同路径文件下下dyjs_new.json文件里
 //电报交流群:https://t.me/passerbyb2021
 
+//新版APP加密无法抓包,需要降级到14.9.0及以下版本,如果登录提示版本过低则先安装最新版的登录后在覆盖安装旧版
+//多账号版,支持用手机抓包headers,新版不支持手机跑脚本刷音符,需要手机刷用老版本,只支持单账号
+
 // [mitm]
 // hostname = *.snssdk.com,*.amemv.com
 
 // [task_local]
-// */30 * * * * * https://raw.githubusercontent.com/passerby-b/Script/master/dyjs_new.js, tag=抖音极速版刷音符, enabled=true
+// */30 * * * * * https://raw.githubusercontent.com/passerby-b/Script/master/dyjs/dyjs_new.js, tag=抖音极速版刷音符, enabled=true
 
 //==========================Quantumultx=========================
 // [rewrite_local]
-// luckycat/aweme/v1/task/done/read? url script-request-header https://raw.githubusercontent.com/passerby-b/Script/master/dyjs_new.js
+// luckycat/aweme/v1/task/done/read? url script-request-header https://raw.githubusercontent.com/passerby-b/Script/master/dyjs/dyjs_new.js
 
 // =========================Loon=============================
 // [Script]
-// luckycat/aweme/v1/task/done/read? script-path=https://raw.githubusercontent.com/passerby-b/Script/master/dyjs_new.js, requires-body=true, timeout=10, tag=抖音极速版刷音符
-
-//新版APP加密无法抓包,需要降级到14.9.0及以下版本,如果登录提示版本过低则先安装最新版的登录后在覆盖安装旧版
-//多账号版,支持用手机抓包headers,新版不支持手机跑脚本刷音符,需要手机刷用老版本,只支持单账号
+// luckycat/aweme/v1/task/done/read? script-path=https://raw.githubusercontent.com/passerby-b/Script/master/dyjs/dyjs_new.js, requires-body=true, timeout=10, tag=抖音极速版刷音符
 
 
 let isShowCionDetail = false;//显示收益详情
